@@ -1,10 +1,10 @@
 package main
 
 import (
-	"bytecode"
 	"go/ast"
 	"go/parser"
 	"go/token"
+	"github.com/arjenroodselaar/hho/bytecode"
 )
 
 const hellogo string = `
@@ -24,10 +24,9 @@ func main() {
 	f := token.NewFileSet()
 	t, err := parser.ParseFile(f, "hello.go", hellogo, 0)
 
-	if (err != nil) {
+	if err != nil {
 		panic(err)
 	}
-
 
 	a := bytecode.NewAssembler()
 	ast.Inspect(t, a.ParseNode)

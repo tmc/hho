@@ -1,15 +1,15 @@
 package main
 
 import (
-	//"os"
 	"go/parser"
-	//"go/ast"
+	"log"
 	"code.google.com/p/go.tools/importer"
 	"code.google.com/p/go.tools/ssa"
-	"hho"
+	"github.com/arjenroodselaar/hho/hho"
 )
-func main() {
-	name := "/Users/arjen/dev/hho/examples/calc.go"
+
+func TestEmitExample(t *testing.T) {
+	name := "examples/calc.go"
 	imp := importer.New(&importer.Config{})
 
 	// Parse the input file.
@@ -27,7 +27,6 @@ func main() {
 
 	//pkg := prog.Package(info.Pkg)
 	//pkg.DumpTo(os.Stdout)
-
 
 	//prog.BuildAll()
 	//hho.EmitProgram(prog)

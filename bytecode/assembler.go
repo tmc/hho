@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"go/ast"
 	"go/token"
-	"php"
+	"github.com/arjenroodselaar/hho/php"
 	"reflect"
 	"strings"
 )
