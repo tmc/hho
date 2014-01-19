@@ -1,7 +1,7 @@
 hho
 ===
 
-A Golang to HHAS compiler
+A Golang to HHAS (HHVM (HipHop Virtual Machine) Assembler) compiler
 
 Testing
 =======
@@ -20,3 +20,9 @@ Using ssadump as an example, we're going to do the same thing.
 But instead of spitting out SSA, we're pooping out HHAS.
 
 Bitchin'
+
+References
+==========
+
+- https://github.com/facebook/hhvm/blob/master/hphp/doc/bytecode.specification
+- https://github.com/facebook/hhvm/blob/master/hphp/runtime/vm/as.cpp
