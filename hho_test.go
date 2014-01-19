@@ -2,10 +2,11 @@ package main
 
 import (
 	"go/parser"
-	"log"
 	"code.google.com/p/go.tools/importer"
 	"code.google.com/p/go.tools/ssa"
 	"github.com/arjenroodselaar/hho/hho"
+
+	"testing"
 )
 
 func TestEmitExample(t *testing.T) {
